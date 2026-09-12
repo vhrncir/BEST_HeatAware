@@ -1,3 +1,6 @@
-# BEST_HeatAware
-Final group project from the Board of European Students of Technology Course on Applied Engineering at the University of Lisbon, Portugal.
-* 📄 [Poster](HeatAware-Biosignal-Driven-Heat-Stress-Monitoring.pdf)
+# ☀️ HeatAware: Biosignal-Driven Heat Stress Monitoring with AI
+## Final group project from the Board of European Students of Technology Course on Applied Engineering at the University of Lisbon, Portugal.
+
+An advanced wearable biomedical system designed for real-time proactive classification of heat exhaustion and heat stroke risk. Developed a wearable hardware prototype to capture high-fidelity multi-modal physiological telemetry: Heart Rate (PPG via PulseSensor), Electrodermal Activity (EDA/GSR), and dual-channel temperature sensing (Body vs. Ambient). Implemented a rigorous 4-stage digital filtering pipeline to mitigate motion artifacts and sensor noise: 4th-order Butterworth low-pass filtering ($f_c = 0.5\text{ Hz}$) for EDA decomposition into Tonic Skin Conductance Level (SCL), moving average smoothing ($W=10$ to $W=100$), and automated peak-detection algorithms for Heart Rate (BPM) derivation. Extracted clinically relevant physiological features (mean HR, mean SCL, and $\Delta T$ temperature delta). Trained, validated, and optimized an interpretable Decision Tree Classifier that achieves a 95% accuracy and an 0.97 F1-score under clean signal conditions.
+
+<img width="553" height="758" alt="HeatAware" src="https://github.com/user-attachments/assets/c4f6ffeb-81da-46d8-a7e3-47fa3fb89714" />
